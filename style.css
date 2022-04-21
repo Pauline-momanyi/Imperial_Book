@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(42, 61, 61);
+}
+.navbar-nav a{
+    color: white !important;
+    font-family: 'Merienda', cursive !important;
+    
+}
+
+.outerHotel{
+    margin-top: 60px;
+    background: rgba(213, 228, 208, 0.5);
+}
+
+
+
+.hotels{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    background: rgba(138, 173, 143, 0.2) !important;
+    margin-top: 10px;
+}
+.sec1{
+    width: 45vw;
+    margin-left: 10px;
+}
+.sec2{
+    /* margin-right: 5px !important; */
+}
+
+.list-cuisines{
+    text-align: center;
+    list-style-position: inside;
+  
+}
+.hotel-img{
+    width: 20vw;
+    padding: 2px;
+    border-radius: 5%;
+}
+.fa-star{
+    color: rgb(251, 251, 6);
+}
+.myfooter{
+    background: rgba(213, 228, 208, 0.5);
+}
+#contactfooter{
+    background-color: rgba(28, 76, 60, 0.5);
+    width: 80vw;
+    margin: auto;
+    
+}
+
+.sub{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.contactdetails{
+    text-align: center;
+}
+.copywr{
+    text-align: center;
+}
