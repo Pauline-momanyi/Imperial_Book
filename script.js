@@ -50,6 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
           
         }else{
 
+          let cuis = hotel.cuisine
+          console.log(cuis);
+          let cuisArr = cuis.map((element)=>{
+            return element.name
+          })
+          console.log(cuisArr);
+
         let hotelDiv = document.createElement('div')
         hotelDiv.className = 'hotels'       
         
@@ -62,13 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="description">${hotel.description}</p>
             <h5 class="cuisine ">Cuisines</h5>
             <ul class="list-cuisine">
-                <li>glutten free</li>
-                <li>sweet</li>               
+                <li>${cuisArr}</li>               
             </ul>
         </div>
         <div class="sec2">
             <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
-            <p class="rating"><i class="fa fa-star" aria-hidden="true">${hotel.rating}</i></p>
+            <p class="rating">Rating: ${hotel.rating}</p>
             <p class=" pricing">${hotel.price}</p>
             <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Reserve Table</a>
             <p class="contacts">${hotel.email}</p>
