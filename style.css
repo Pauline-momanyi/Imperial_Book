@@ -1,6 +1,12 @@
 body{
     background-color: rgb(42, 61, 61);
 }
+#about{
+    /* height: 30vh; */
+    text-align: center;
+    
+}
+ 
 .navbar-nav a{
     color: white !important;
     font-family: 'Merienda', cursive !important;
@@ -26,13 +32,49 @@ body{
     margin-left: 10px;
 }
 .sec2{
-    /* margin-right: 5px !important; */
+    padding: 10px !important;
 }
-
+.reserveform{
+    /* width: 60vw; */
+    margin: auto;
+    background-color: rgb(221, 226, 196);
+}
+.reservebtn{
+    text-align: center;
+}
 .list-cuisines{
     text-align: center;
     list-style-position: inside;
   
+}
+.stars-outer{
+    position: relative;
+    display: inline-block;
+}
+.stars-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+#searchWrapper{
+    text-align: center;
+}
+.stars-outer::before{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: antiquewhite;
+
+}
+.stars-inner::before{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+
 }
 .hotel-img{
     width: 20vw;
@@ -42,6 +84,9 @@ body{
 .fa-star{
     color: rgb(251, 251, 6);
 }
+/* .fa-thumbs-up, .fa-thumbs-down{
+    color: white;
+} */
 .myfooter{
     background: rgba(213, 228, 208, 0.5);
 }

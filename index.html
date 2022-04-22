@@ -20,7 +20,7 @@
           </a>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Hotels</a>
+              <a class="nav-link" href="#">Restraunts</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -31,59 +31,75 @@
           </ul>
         
       </nav>
-    <!-- <h3>World Class Exerience</h3>  -->
+    <h3>World Class Exerience</h3> 
     <div class="outerHotel">
-        <div id="about">
+        <div id="about">            
             <h4>ABOUT US</h4>
             <p>Find your ideal hotel at a great price. We list a variety of world class hotels with their price ranges. Book yours today at a discounted price.</p>
+            <img src="./about.jpg" alt="" id="about-image">
         </div>
-        <div class="hotels">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnvU38BBqH1mFz3IS1M57vux2YTi31XA_O1Q&usqp=CAU" alt="" class="hotel-img">
-            <div class="sec1">
-                <h3 class="hotel-name">Name</h3>
-                <p class="address ">Address:<em>Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522</em></p>
-                <p class="description">Description:Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus quam quas deserunt illo reiciendis cupiditate ut! Porro, iste provident.</p>
-                <h5 class="cuisine ">Cuisines</h5>
-                <ul class="list-cuisine">
-                    <li>glutten free</li>
-                    <li>sweet</li>               
-                </ul>
-            </div>
-            <div class="sec2">
-                <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
-                <p class="rating"><i class="fa fa-star" aria-hidden="true"></i></p>
-                <p class=" pricing">Price Range</p>
-                <a href="#" class="btn btn-success">Book Hotel</a>
-                <p class="contacts">Contacts</p>
-                <p class="website">Website</p>
-            </div>  
-      
-        </div> 
-    
-        <div class="hotels">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnvU38BBqH1mFz3IS1M57vux2YTi31XA_O1Q&usqp=CAU" alt="" class="hotel-img">
-            <div class="sec1">
-                <h3 class="hotel_name">Name</h3>
-                <p class="address ">Address:<em>Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522</em></p>
-                <h4 class="description ">Description</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus quam quas deserunt illo reiciendis cupiditate ut! Porro, iste provident.</p>
-                <h5 class="cuisine">Cuisines</h5>
-                <ul class="list-cuisine">
-                    <li>glutten free</li>
-                    <li>sweet</li>               
-                </ul>
-            </div>
-            <div class="sec2">
-                <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
-                <p class="rating"><i class="fa fa-star" aria-hidden="true"></i></p>
-                <p class=" pricing">Price Range</p>
-                <a href="#" class="btn btn-success">Book Hotel</a>
-                <p class="contacts">Contacts</p>
-                <p class="website">Website</p>
-            </div> 
-        </div> 
+        <br>
+        <div id="searchWrapper">
+            <input type="text" name="searchBar" id="searchBar" placeholder="search hotel">
+        </div>
+        
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Fill Form to Reserve</h5>
+                          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="reserveform">
+                                <div class="form-group">
+                                    Name: <input type="text" placeholder="Enter Name" class="form-control" id="resname" required>
+                                </div>
+                                <div class="form-group">
+                                    E-mail: <input type="email" placeholder="Enter Email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    Phone: <input type="text" placeholder="" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    Number of Guests: <input type="number" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    Reservation Type: <select name="" id="">
+                                        <option value="" selected>Dinner</option>
+                                        <option value="">Corporate</option>
+                                        <option value="">Birthday/Anniversary</option>
+                                        <option value="">Wedding</option>
+                                        <option value="">VIP</option>
+                                        <option value="">Private</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    reservation Time: <input type="datetime-local" id="meeting-time"
+                                    name="meeting-time" 
+                                    min="2021-06-07T00:00" max="2022-06-14T00:00">
+                                </div>
+                                <div class="form-group">
+                                    Any special requests: <textarea name="" id="" cols="40" rows="2"></textarea>
+                                </div> 
+                                <div class="reservebtn">
+                                    <button class="btn btn-success">RESERVE</button>      
+                                </div> 
+                                
+                         
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
     </div>
-
+   
     <div class="myfooter">
         <footer id="contactfooter">
             <div class="sub">
@@ -114,12 +130,8 @@
         
     </div>    
 
-    
-    
-  
-    
-    
-
-    <!-- <script src="./script.js"></script> -->
+   
+    <script src="./script.js"></script>
+    <!-- <script src="./script2.js"></script> -->
 </body>
 </html>
